@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Christy | Store</title>
+    <link rel="stylesheet" href="christy-clean-combined.css">
+</head>
+<body>
+
+    <!-- TOP BAR -->
+    <header class="topbar">
+        <a href="index.html" class="logo">Chir<span>sty</span></a>
+
+        <nav class="nav">
+            <a href="index.html">Home</a>
+            <a href="Store.html" class="active">Store</a>
+            <a href="Contact.html">Contact</a>
+            <a href="About.html">About Us</a>
+        </nav>
+
+        <button class="hamburger" id="hamburger" aria-label="Open menu" aria-expanded="false">
+            <span></span>
+            <span></span>
+            <span></span>
+        </button>
+    </header>
+
+    <!-- MOBILE NAV -->
+    <nav class="mobile-nav" id="mobileNav">
+        <a href="index.html">Home</a>
+        <a href="Store.html" class="active">Store</a>
+        <a href="Contact.html">Contact</a>
+        <a href="About.html">About Us</a>
+    </nav>
+
+    <!-- STORE CONTENT -->
+    <main class="page">
+        <section class="store-section">
+            <h1 class="store-title">SHOP BY CATEGORY</h1>
+
+            <div class="category-grid">
+                <div class="category-card">
+                    <img src="Images/Store/IM3.png" alt="Pants category">
+                    <a href="pants.html" class="shop-btn">SHOP NOW</a>
+                </div>
+
+                <div class="category-card">
+                    <img src="Images/Store/IM1.png" alt="Frocks category">
+                    <a href="frocks.html" class="shop-btn">SHOP NOW</a>
+                </div>
+
+                <div class="category-card">
+                    <img src="Images/Store/IM2.png" alt="Skirts category">
+                    <a href="skirts.html" class="shop-btn">SHOP NOW</a>
+                </div>
+
+                <div class="category-card">
+                    <img src="Images/Store/IM4.png" alt="Denims category">
+                    <a href="denims.html" class="shop-btn">SHOP NOW</a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- FOOTER -->
+    <footer class="footer">
+        <div class="footer-column">
+            <h3>SHOP</h3>
+            <a href="index.html#New_arrivals">NEW ARRIVALS</a>
+            <a href="index.html#Best_seller">BEST SELLER</a>
+            <a href="frocks.html">FROCKS</a>
+            <a href="denims.html">DENIMS & JEANS</a>
+            <a href="pants.html">PANTS</a>
+            <a href="skirts.html">SKIRTS</a>
+        </div>
+
+        <div class="footer-column">
+            <h3>INFORMATION</h3>
+            <a href="#">Shipping Policy</a>
+            <a href="#">Returns & Exchanges</a>
+            <a href="#">Terms & Conditions</a>
+            <a href="#">Privacy Policy</a>
+        </div>
+
+        <div class="footer-column">
+            <h3>COMPANY</h3>
+            <a href="About.html">About Us</a>
+            <a href="Contact.html">Contact Us</a>
+            <a href="#">FAQs</a>
+        </div>
+
+        <div class="footer-column newsletter">
+            <h3>NEWSLETTER SIGN UP</h3>
+            <p>Sign up for exclusive updates, new arrivals & insider only discounts.</p>
+
+            <form class="newsletter-box">
+                <input type="email" placeholder="Enter your email address" required>
+                <button type="submit">SUBMIT</button>
+            </form>
+
+            <div class="social-icons">
+                <a href="https://www.facebook.com/share/18yU6ajZvG/" aria-label="Facebook">
+                    <img src="Images/facebook_icon.png" alt="Facebook">
+                </a>
+                <a href="https://www.instagram.com/christylkclothing?utm_source=qr" aria-label="Instagram">
+                    <img src="Images/instra _icon .png" alt="Instagram">
+                </a>
+                <a href="https://pin.it/49ZJRZsqN" aria-label="Pinterest">
+                    <img src="Images/pintrest_icon.png" alt="Pinterest">
+                </a>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        const hamburger = document.getElementById("hamburger");
+        const mobileNav = document.getElementById("mobileNav");
+
+        hamburger.addEventListener("click", () => {
+            const isOpen = mobileNav.classList.toggle("open");
+            hamburger.classList.toggle("open", isOpen);
+            hamburger.setAttribute("aria-expanded", isOpen);
+        });
+    </script>
+
+</body>
+</html>
